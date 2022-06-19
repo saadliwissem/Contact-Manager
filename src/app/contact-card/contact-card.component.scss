@@ -1,0 +1,36 @@
+.right {
+    float: right;
+}
+
+////@at-root
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    // width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.please {
+    padding-left: 240px;
+    float: right;
+}
+
+.limitTextHeight {
+    height: 20px;
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+}

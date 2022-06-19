@@ -1,0 +1,30 @@
+<div class="two">
+    <a href="/contacts/addcontact" style="text-decoration: none; font-size: larger;color:blue"><button style="border-radius: 50%;" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16" style="border-radius: none;">
+            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+          </svg>
+  </button> AJOUTER UN CONTACT </a>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="chercher" aria-label="Search">
+        <button class="btn btn-primary" type="submit">CHERCHER</button>
+    </form>
+</div>
+<pre>
+
+
+
+</pre>
+<h6>
+    listes des contact
+</h6>
+<pre> </pre>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let c of card;let i=index">
+        <div class="card mb-3" style="max-width: 540px;">
+            <app-contact-card id="{{card[i].id}}" lastName="{{card[i].lastName}}" firstName="{{card[i].firstName}}" description="{{card[i].description}}" type="{{card[i].type}}" email="{{card[i].email}}" phone="{{card[i].phone}}" src="{{card[i].src}}">
+            </app-contact-card>
+        </div>
+    </div>
+
+</div>

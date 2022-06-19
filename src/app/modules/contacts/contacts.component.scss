@@ -1,0 +1,33 @@
+@import "../../../../node_modules/bootstrap/dist/css/bootstrap.css";
+a {
+    text-decoration: none;
+}
+
+.two {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    background-color: whitesmoke;
+    top: 64px;
+    width: 100%;
+    padding: 25px;
+}
+
+.longbar {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    background-color: whitesmoke;
+    top: 64px;
+    width: 100%;
+    padding: 25px;
+}
+
+.d-flex {
+    float: right;
+    padding-right: 400px;
+}
+
+li {
+    display: inline;
+}
