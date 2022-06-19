@@ -22,7 +22,7 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col" *ngFor="let c of card;let i=index">
         <div class="card mb-3" style="max-width: 540px;">
-            <app-contact-card id="{{card[i].id}}" lastName="{{card[i].lastName}}" firstName="{{card[i].firstName}}" description="{{card[i].description}}" type="{{card[i].type}}" email="{{card[i].email}}" phone="{{card[i].phone}}" src="{{card[i].src}}">
+            <app-contact-card _id="{{card[i]._id}}" id="{{i+1}}" lastName="{{card[i].name.lastName}}" firstName="{{card[i].name.firstName}}" description="{{card[i].description}}" type="{{card[i].type}}" email="{{card[i].email}}" phone="{{card[i].phone}}" src="{{card[i].src}}">
             </app-contact-card>
         </div>
     </div>

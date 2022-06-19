@@ -1,3 +1,4 @@
+import { ContactService } from './../../contact.service';
 import { AddContactComponent } from './../../modules/add-contact/add-contact.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -17,6 +18,7 @@ import { MatSelectModule } from '@angular/material/select';
 import {  MatInputModule } from '@angular/material/input';
 import { ContactsComponent } from 'src/app/modules/contacts/contacts.component';
 import { ContactCardComponent } from 'src/app/contact-card/contact-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -45,10 +47,11 @@ import { ContactCardComponent } from 'src/app/contact-card/contact-card.componen
     MatInputModule,
     MatIconModule,
     MatDividerModule,
+    HttpClientModule
     
 
    
   ],
-  providers:[]
+  providers:[ContactService]
 })
 export class DefaultModule { }

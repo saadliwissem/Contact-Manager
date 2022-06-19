@@ -34,7 +34,8 @@ const createContact = (request, response) => {
         email: request.body.email,
         phone: request.body.phone,
         typeContact: request.body.type,
-        description: request.body.description
+        description: request.body.description,
+        src: request.body.src
     }, (error, contact) => {
         if (error) {
             response
