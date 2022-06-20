@@ -19,6 +19,7 @@ import {  MatInputModule } from '@angular/material/input';
 import { ContactsComponent } from 'src/app/modules/contacts/contacts.component';
 import { ContactCardComponent } from 'src/app/contact-card/contact-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -47,6 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatIconModule,
     MatDividerModule,
+    FormsModule,
     HttpClientModule
     
 

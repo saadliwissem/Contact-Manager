@@ -32,7 +32,7 @@ const contactSchema = new mongoose.Schema({
     phone: Number,
     type: {
         type: String,
-        'default': 'Work'
+
     },
 
     address: [adressSchema]

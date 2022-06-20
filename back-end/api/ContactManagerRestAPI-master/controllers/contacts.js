@@ -33,7 +33,7 @@ const createContact = (request, response) => {
         },
         email: request.body.email,
         phone: request.body.phone,
-        typeContact: request.body.type,
+        type: request.body.type,
         description: request.body.description,
         src: request.body.src
     }, (error, contact) => {
